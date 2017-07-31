@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.13
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllTheThings", "AllTheThings\AllTheThings.csproj", "{438E3FEB-6C33-4C2E-A784-A65557B9C1D5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpRequester", "HttpRequester\HttpRequester.csproj", "{42E87BB3-6C1B-4E91-8D6C-E065FADDDB6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XssLib", "XssLib\XssLib.csproj", "{B3348C17-E19D-4104-8B17-A2266F7B69FE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exploit libraries", "Exploit libraries", "{CA93D40C-5A0E-4B8B-B3E1-DA98AFD125FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossSiteScriptingExploitLibrary", "Exploit libraries\CrossSiteScriptingExploitLibrary\CrossSiteScriptingExploitLibrary.csproj", "{7A0B5E9E-521D-492E-BFBF-C07940DFDB92}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,12 +25,15 @@ Global
 		{42E87BB3-6C1B-4E91-8D6C-E065FADDDB6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42E87BB3-6C1B-4E91-8D6C-E065FADDDB6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42E87BB3-6C1B-4E91-8D6C-E065FADDDB6D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B3348C17-E19D-4104-8B17-A2266F7B69FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B3348C17-E19D-4104-8B17-A2266F7B69FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B3348C17-E19D-4104-8B17-A2266F7B69FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B3348C17-E19D-4104-8B17-A2266F7B69FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A0B5E9E-521D-492E-BFBF-C07940DFDB92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A0B5E9E-521D-492E-BFBF-C07940DFDB92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A0B5E9E-521D-492E-BFBF-C07940DFDB92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A0B5E9E-521D-492E-BFBF-C07940DFDB92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7A0B5E9E-521D-492E-BFBF-C07940DFDB92} = {CA93D40C-5A0E-4B8B-B3E1-DA98AFD125FE}
 	EndGlobalSection
 EndGlobal
