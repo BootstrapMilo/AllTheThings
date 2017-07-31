@@ -52,6 +52,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\FileSerializer.cs" />
+    <Compile Include="Helpers\HttpRequester.cs" />
+    <Compile Include="Helpers\IRequester.cs" />
     <Compile Include="IPayload.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

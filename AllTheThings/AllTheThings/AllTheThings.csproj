@@ -57,9 +57,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Helpers\FileSerializer.cs" />
-    <Compile Include="Helpers\HttpRequester.cs" />
-    <Compile Include="Helpers\IRequester.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -68,7 +65,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Exploit libraries\CrossSiteScriptingExploitLibrary\CrossSiteScriptingExploitLibrary.csproj">
+    <ProjectReference Include="..\Exploit libraries\CrossSiteScriptingExploitLibrary\CrossSiteScriptingPayloadLibrary.csproj">
       <Project>{7a0b5e9e-521d-492e-bfbf-c07940dfdb92}</Project>
       <Name>CrossSiteScriptingExploitLibrary</Name>
     </ProjectReference>
