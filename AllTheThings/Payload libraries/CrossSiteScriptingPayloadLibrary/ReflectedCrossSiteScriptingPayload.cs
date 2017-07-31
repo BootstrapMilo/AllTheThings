@@ -1,5 +1,7 @@
 ﻿namespace AllTheThings.PayloadLibrary.CrossSiteScriptingPayloadLibrary
 {
+    using System;
+    using System.Collections.Generic;
     #region references
     // Project
     using Library42;
@@ -7,10 +9,10 @@
 
     public class ReflectedCrossSiteScriptingPayload : IPayload
     {
-        public string payloadElement { get; set; }
-        public string payloadEvent { get; set; }
-        public string payloadFunction { get; set; }
-        public string target { get; set; }
-        public string tag { get; set; }
-     }
+        public string PayloadElement { get; set; }
+        public string PayloadEvent { get; set; }
+        public string PayloadFunction { get; set; }
+        public List<string> Targets { get; set; }
+        public List<string> Tags { get; set; }
+    }
 }

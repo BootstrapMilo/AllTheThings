@@ -39,22 +39,22 @@
             return payloads;
         }
 
-        public ReflectedCrossSiteScriptingPayload CreatePayload(string payloadElement, string payloadEvent, string payloadFunction, string target, string tag)
+        public ReflectedCrossSiteScriptingPayload CreatePayload(string payloadElement, string payloadEvent, string payloadFunction, List<string> targets, List<string> tags)
         {
             return new ReflectedCrossSiteScriptingPayload()
             {
-                payloadElement = payloadElement,
-                payloadEvent = payloadEvent,
-                payloadFunction = payloadFunction,
-                target = target,
-                tag = tag
+                PayloadElement = payloadElement,
+                PayloadEvent = payloadEvent,
+                PayloadFunction = payloadFunction,
+                Targets = targets,
+                Tags = tags
             };
         }
 
         public void StorePayload(ReflectedCrossSiteScriptingPayload payload)
         {
             //todo move directory to config
-            string projectPath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
+            string projectPath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent?.Parent?.FullName;
             var directory = projectPath + @"\Data\Payloads\";
             var fileSerializer = new FileSerializer<ReflectedCrossSiteScriptingPayload>();
             fileSerializer.SerializeToDisk(payload, $"{directory}xss-{Guid.NewGuid()}");
@@ -63,7 +63,7 @@
         private List<string> RetriveListOfCrossSiteScriptingPayloadFilePaths()
         {
             //todo move directory to config
-            string projectPath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
+            string projectPath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent?.Parent?.FullName;
             var directory = projectPath+@"\Data\Payloads\";
             var files = Directory.EnumerateFiles(directory, "*xss*", SearchOption.AllDirectories).ToList();
             return files;
