@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BuildCrossSitePayloads.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -65,13 +66,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Exploit libraries\CrossSiteScriptingExploitLibrary\CrossSiteScriptingPayloadLibrary.csproj">
-      <Project>{7a0b5e9e-521d-492e-bfbf-c07940dfdb92}</Project>
-      <Name>CrossSiteScriptingExploitLibrary</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Library42\Library42.csproj">
       <Project>{abda8951-7e8d-477c-950c-2b34151c78e0}</Project>
       <Name>Library42</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Payload libraries\CrossSiteScriptingPayloadLibrary\CrossSiteScriptingPayloadLibrary.csproj">
+      <Project>{7a0b5e9e-521d-492e-bfbf-c07940dfdb92}</Project>
+      <Name>CrossSiteScriptingPayloadLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

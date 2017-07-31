@@ -13,18 +13,8 @@ namespace AllTheThings
         
         public static void Main(string[] args)
         {
-            var expoite = new ReflectedCrossSiteScriptingPayload()
-            {
-                
-            };
-
-            FileSerializer<ReflectedCrossSiteScriptingPayload> fs = new FileSerializer<ReflectedCrossSiteScriptingPayload>();
-
-            fs.SerializeToDisk(expoite, "TestFile");
-
-            ReflectedCrossSiteScriptingPayload loadedExpoite = fs.GetFromDisk(@"C:\Exploits\TestFile.json");
-
-            Console.WriteLine(loadedExpoite.Payload);
+            var xssLib = new ReflectedCrossSiteScriptingPayloadLibrary();
+            var payloads = xssLib.RetriveAllPayloads();
             Console.ReadLine();
         }
     }

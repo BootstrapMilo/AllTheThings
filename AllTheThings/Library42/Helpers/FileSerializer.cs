@@ -12,13 +12,13 @@ namespace AllTheThings.Helpers
     public class FileSerializer<T>
     {
 
-        public bool SerializeToDisk(T toSer, string filename)
+        public bool SerializeToDisk(T toSer, string path)
         {
-            using(StreamWriter file = File.CreateText($@"C:\Exploits\{filename}.json"))
+            using(StreamWriter file = File.CreateText(path))
             {
                 file.Write(JsonConvert.SerializeObject(toSer));
             }
-            return File.Exists($@"C:\Exploits\{filename}.json");
+            return File.Exists(path);
         }
 
         /// <summary>
