@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AllTheThings.Helpers;
+using AllTheThings.Library42.Manipulators;
 using AllTheThings.PayloadLibrary.CrossSiteScriptingPayloadLibrary;
 
 namespace AllTheThings
@@ -13,18 +14,11 @@ namespace AllTheThings
         
         public static void Main(string[] args)
         {
-            var expoite = new ReflectedCrossSiteScriptingPayload()
-            {
-                
-            };
+            string s = "This is a test";
+            Console.WriteLine(s);
+            var uni = new StringToHexReprecentation();
 
-            FileSerializer<ReflectedCrossSiteScriptingPayload> fs = new FileSerializer<ReflectedCrossSiteScriptingPayload>();
-
-            fs.SerializeToDisk(expoite, "TestFile");
-
-            ReflectedCrossSiteScriptingPayload loadedExpoite = fs.GetFromDisk(@"C:\Exploits\TestFile.json");
-
-            Console.WriteLine(loadedExpoite.Payload);
+            Console.WriteLine(uni.Manipulate(s));
             Console.ReadLine();
         }
     }

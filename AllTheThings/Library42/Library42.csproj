@@ -56,6 +56,11 @@
     <Compile Include="Helpers\HttpRequester.cs" />
     <Compile Include="Helpers\IRequester.cs" />
     <Compile Include="IPayload.cs" />
+    <Compile Include="Manipulators\AddEscapeChars.cs" />
+    <Compile Include="Manipulators\IManipulator.cs" />
+    <Compile Include="Manipulators\StringRandomCapetalizer.cs" />
+    <Compile Include="Manipulators\StringToHexReprecentation.cs" />
+    <Compile Include="Manipulators\StringToUnicodeReprecentation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
