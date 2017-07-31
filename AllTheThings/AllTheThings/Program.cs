@@ -10,7 +10,7 @@ namespace AllTheThings
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hallo crul world!");
+            Console.WriteLine("Hello crul world!");
 
             Console.ReadLine();
         }
