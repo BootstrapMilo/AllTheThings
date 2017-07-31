@@ -14,11 +14,8 @@ namespace AllTheThings
         
         public static void Main(string[] args)
         {
-            string s = "This is a test";
-            Console.WriteLine(s);
-            var uni = new StringToHexReprecentation();
-
-            Console.WriteLine(uni.Manipulate(s));
+            var xssLib = new ReflectedCrossSiteScriptingPayloadLibrary();
+            var payloads = xssLib.RetriveAllPayloads();
             Console.ReadLine();
         }
     }
