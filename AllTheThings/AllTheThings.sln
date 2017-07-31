@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllTheThings", "AllTheThing
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XSSLib", "XSSLib\XSSLib.csproj", "{1A104EAB-6418-4088-8B57-9BE8816AAE63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLiLib", "SQLiLib\SQLiLib.csproj", "{B270774D-E49F-4270-9767-8210E47936B4}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{1A104EAB-6418-4088-8B57-9BE8816AAE63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A104EAB-6418-4088-8B57-9BE8816AAE63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A104EAB-6418-4088-8B57-9BE8816AAE63}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B270774D-E49F-4270-9767-8210E47936B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B270774D-E49F-4270-9767-8210E47936B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B270774D-E49F-4270-9767-8210E47936B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B270774D-E49F-4270-9767-8210E47936B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
