@@ -8,5 +8,6 @@ namespace AllTheThings.XssLib
 {
     public class Xss
     {
+
     }
 }
