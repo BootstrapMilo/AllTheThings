@@ -7,7 +7,7 @@
     <ProjectGuid>{ABDA8951-7E8D-477C-950C-2B34151C78E0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Library42</RootNamespace>
+    <RootNamespace>AllTheThings.Library42</RootNamespace>
     <AssemblyName>Library42</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -52,7 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IExploit.cs" />
+    <Compile Include="IPayload.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
