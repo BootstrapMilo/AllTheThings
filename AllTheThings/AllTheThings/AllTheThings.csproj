@@ -67,6 +67,16 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Exploit libraries\CrossSiteScriptingExploitLibrary\CrossSiteScriptingExploitLibrary.csproj">
+      <Project>{7a0b5e9e-521d-492e-bfbf-c07940dfdb92}</Project>
+      <Name>CrossSiteScriptingExploitLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Library42\Library42.csproj">
+      <Project>{abda8951-7e8d-477c-950c-2b34151c78e0}</Project>
+      <Name>Library42</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
