@@ -16,8 +16,7 @@ namespace AllTheThings.Helpers
         {
             using(StreamWriter file = File.CreateText($@"C:\Exploits\{filename}.json"))
             {
-                JsonSerializer serializer = new JsonSerializer();
-                serializer.Serialize(file, JsonConvert.SerializeObject(toSer));
+                file.Write(JsonConvert.SerializeObject(toSer));
             }
             return File.Exists($@"C:\Exploits\{filename}.json");
         }

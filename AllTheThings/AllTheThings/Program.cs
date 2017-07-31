@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AllTheThings.Helpers;
+using AllTheThings.CrossSiteScriptingExploitLibrary;
 
 namespace AllTheThings
 {
@@ -12,18 +13,19 @@ namespace AllTheThings
         
         public static void Main(string[] args)
         {
-            IHttpRequester _httpRequester = new HttpRequester();
-            Console.WriteLine("Hello crul world!");
+            var expoite = new ReflectedCrossSiteScriptingExploit()
+            {
+                Payload = "Test PayLoad"
+            };
 
+            FileSerializer<ReflectedCrossSiteScriptingExploit> fs = new FileSerializer<ReflectedCrossSiteScriptingExploit>();
+
+            fs.SerializeToDisk(expoite, "TestFile");
+
+            ReflectedCrossSiteScriptingExploit loadedExpoite = fs.GetFromDisk(@"C:\Exploits\TestFile.json");
+
+            Console.WriteLine(loadedExpoite.Payload);
             Console.ReadLine();
-
-            string url = args[0];
-
-            string content = "<sript>alert(1)</script>";
-
-            var res = _httpRequester.MakeRequestAsync(url, content);
-
-
         }
     }
 }
